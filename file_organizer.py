@@ -25,11 +25,9 @@ def organize_folder(target_folder):
 
 
         name, extension = os.path.splitext(file_name)
-        extension = extension.lower() # Make it lowercase just in case
+        extension = extension.lower()
 
-        # 4. Use a CONDITION to see if the extension matches our rules
         if extension in file_rules:
-            # Figure out which subfolder it belongs in
             folder_name = file_rules[extension]
             destination_folder = os.path.join(target_folder, folder_name)
 
@@ -43,5 +41,6 @@ def organize_folder(target_folder):
 
 # ~~~ HOW TO RUN IT ~~~
 # Example: "C:/Users/YourName/Desktop/bankai_test"
+#change the location to your file
 messy_folder = r"C:\Users\HP\OneDrive\Desktop\bankai_test"
 organize_folder(messy_folder)
