@@ -3,6 +3,7 @@ import shutil
 
 def organize_folder(target_folder):
 
+
     file_rules = {
         '.pdf': 'Documents',
         '.docx': 'Documents',
@@ -24,9 +25,11 @@ def organize_folder(target_folder):
             continue
 
 
+
         name, extension = os.path.splitext(file_name)
         extension = extension.lower()
 
+        
         if extension in file_rules:
             folder_name = file_rules[extension]
             destination_folder = os.path.join(target_folder, folder_name)
