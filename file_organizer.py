@@ -3,6 +3,7 @@ import shutil
 
 def organize_folder(target_folder):
 
+    #types of files it can work with
 
     file_rules = {
         '.pdf': 'Documents',
