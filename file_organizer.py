@@ -16,9 +16,10 @@ def organize_folder(target_folder):
     }
 
    #1. list of every thing in folder
+    
     all_files = os.listdir(target_folder)
 
-    # 2. loop to check
+    # 2. loop to check for an unauthorized file
     for file_name in all_files:
         file_path = os.path.join(target_folder, file_name)
 
